@@ -61,6 +61,7 @@ export default class LoginPage extends Component {
 
     const loginUserSuccess = user => {
       this.setState({ message: 'Logado com sucesso !'})
+      this.props.navigation.navigate('Main')
     }
 
     const loginUserFailed = error => {
